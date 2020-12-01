@@ -2,7 +2,7 @@
 
 ## Setup
 
-Clone this repo and run `npm install` to install dependecies.
+Fork this repo and run `npm install` to install dependecies.
 
 ## Running
 
