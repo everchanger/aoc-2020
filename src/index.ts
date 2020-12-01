@@ -34,7 +34,8 @@ function startTimer (label: string): void {
 
 function stopTimer (label: string): number {
   const elapsed = process.hrtime(timer.get(label))
-  return elapsed[1] / 1000000
+  const nano = 1000000000
+  return (elapsed[0] * nano + elapsed[1]) / 1000000
 }
 
 async function run (): Promise<void> {
